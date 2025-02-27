@@ -9,11 +9,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Link to={'/json'} className='btn btn-info'>Json palce holder</Link>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/add' element={<AddData />}></Route>
           <Route path='/Edit_Student/:id' element={<EditData />}></Route>
-         
+           <Route path='/json' element={<FetchData />}></Route>
         </Routes>
 
       </BrowserRouter>
